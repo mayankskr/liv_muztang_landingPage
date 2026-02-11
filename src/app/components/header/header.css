@@ -1,32 +1,30 @@
 .Header {
-    /* 1. Necessary for z-index stacking context */
-    position: sticky;
-    top: 0;
+  /* 1. Necessary for z-index stacking context */
+  position: sticky;
+  top: 0;
 }
 
 .Header::before {
-    content: "";
-    
-    /* 2. Positioning: This centers the element relative to the viewport */
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    
-    /* 3. Dimensions: Full viewport width */
-    width: 100vw;
-    height: 100%;
-    
-    /* 4. The Shape: Rounded bottom corners */
-    border-bottom: solid 3px rgba(255, 255, 255, 0.5);
-    border-bottom-left-radius: 24px;
-    border-bottom-right-radius: 24px;
-    
+  content: '';
 
-    /* 5. Stacking: Put it behind the text */
-    z-index: -1;
-    
-    /* Optional: Subtle shadow for depth */
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  /* 2. Positioning: This centers the element relative to the viewport */
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+  /* 3. Dimensions: Full viewport width */
+  width: 100vw;
+  height: 100%;
+
+  /* 4. The Shape: Rounded bottom corners */
+  border-bottom: solid 3px rgba(255, 255, 255, 0.5);
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+
+  /* 5. Stacking: Put it behind the text */
+  z-index: -1;
+
+  /* Optional: Subtle shadow for depth */
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
 }
-
