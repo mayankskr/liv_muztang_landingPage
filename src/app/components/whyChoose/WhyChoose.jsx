@@ -1,7 +1,8 @@
 import React from 'react';
 import { FaRunning, FaMortarPestle, FaHeartbeat } from 'react-icons/fa';
 import { MdOutlineBalance } from 'react-icons/md';
-
+import { PhoneIcon } from 'lucide-react';
+import CallButton from '../CallButton';
 // Reusable component for each feature item
 const FeatureItem = ({ icon, title, description }) => {
   return (
@@ -21,7 +22,7 @@ const WhyChoose = () => {
       icon: <FaRunning />,
       title: 'दुनिया भर में भरोसेमंद:',
       description:
-        'प्ले मोर को दुनियाभर में इस्तेमाल किया जा रहा है, और यह एक ग्लोबल फेवरेट बन चुका है।',
+        'LIV MUZTANG को दुनियाभर में इस्तेमाल किया जा रहा है, और यह एक ग्लोबल फेवरेट बन चुका है।',
     },
     {
       icon: <FaMortarPestle />,
@@ -47,14 +48,14 @@ const WhyChoose = () => {
     <section className="">
       <div className="mx-auto">
         {/* Main card container with dark, semi-transparent background */}
-        <div className="rounded-[40px] bg-black/60 p-8 text-center backdrop-blur-md md:p-16">
+        <div className="rounded-4xl bg-black/60 p-8 text-center backdrop-blur-md md:p-16">
           {/* Headings */}
           <h2 className="mb-6 text-3xl leading-tight font-extrabold text-orange-500 md:text-5xl">
-            Why Choose Play More Over Other Men’s Health Supplements?
+            Why Choose LIV MUZTANG Over Other Men’s Health Supplements?
           </h2>
           <p className="mx-auto mb-12 max-w-4xl text-lg text-white md:text-xl">
-            Choosing the right men’s health supplement can be overwhelming, but here’s why Play More
-            stands out:
+            Choosing the right men’s health supplement can be overwhelming, but here’s why LIV
+            MUZTANG stands out:
           </p>
 
           {/* Grid for features */}
@@ -65,9 +66,9 @@ const WhyChoose = () => {
           </div>
 
           {/* Call to Action Button */}
-          <button className="rounded-full bg-orange-500 px-12 py-4 text-lg font-bold text-black transition-colors duration-300 hover:bg-orange-600">
-            CALL NOW
-          </button>
+          <div className="mx-auto w-fit animate-pulse rounded-3xl bg-orange-100 p-2">
+            <CallButton></CallButton>
+          </div>
         </div>
       </div>
     </section>

@@ -5,6 +5,7 @@ import { FaStar, FaStarHalfAlt } from 'react-icons/fa';
 import bottleImg from '../../../assets/2Bottle.webp';
 import logoImg from '../../../assets/LIV_MUZTANG.png';
 import ProductDescription from './ProductDescription';
+import CallButton from '../CallButton.jsx';
 
 export default function Hero() {
   return (
@@ -21,7 +22,7 @@ export default function Hero() {
             className="relative z-20 mx-auto max-h-60 object-contain md:max-h-120"
           />
         </div>
-        <div className="mx-1 my-auto flex h-fit flex-col gap-3 rounded-4xl border-2 py-4 text-center text-white opacity-90 backdrop-blur-xl">
+        <div className="mx-1 my-auto flex h-fit flex-col gap-3 rounded-4xl bg-black/60 py-4 text-center text-white backdrop-blur-md">
           <h1 className="text-xl font-bold md:text-2xl lg:text-4xl">पॉवर, जोश और टाइमिंग बढ़ाएं</h1>
           <h2 className="text-md font-bold md:text-xl lg:text-2xl">
             ज़्यादा स्टैमिना, ज़्यादा एनर्जी, ज़्यादा कॉन्फिडेन्स
@@ -49,12 +50,8 @@ export default function Hero() {
             </div>
             <p>4.8 Rating By 58040 Users</p>
           </div>
-
-          <div className="mx-auto w-fit animate-pulse rounded-3xl bg-orange-100 p-2">
-            <a href="tel:+910000000000" className="flex gap-1 font-bold text-slate-800">
-              <PhoneIcon className="h-6 w-6 text-orange-400" />
-              Call Now
-            </a>
+          <div className="mx-auto animate-pulse rounded-3xl bg-orange-100 p-2">
+            <CallButton></CallButton>
           </div>
         </div>
       </div>

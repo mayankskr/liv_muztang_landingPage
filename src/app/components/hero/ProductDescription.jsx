@@ -1,7 +1,7 @@
 const ProductDescription = () => {
   return (
     <div className="ProductDescription container mx-auto">
-      <div className="m-1 rounded-3xl border-2 border-white p-2 text-center text-white opacity-90 shadow-2xl backdrop-blur-xl md:p-10">
+      <div className="m-1 rounded-4xl bg-black/60 p-2 text-center text-white backdrop-blur-md md:p-10">
         <div className="mb-8 space-y-4">
           <p className="text-xl leading-relaxed font-medium md:text-2xl">
             दुनिया का सबसे बेहतरीन पुरुषों का वेलनेस फ़ॉर्मूला, जो{' '}

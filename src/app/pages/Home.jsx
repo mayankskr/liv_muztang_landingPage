@@ -3,6 +3,7 @@ import Hero from '../components/hero/Hero';
 import Video from '../components/video/Video';
 import About from '../components/about/About';
 import WhyChoose from '../components/whyChoose/WhyChoose';
+import Advantages from '../components/advantages/advantages';
 // Importing images allows Vite to optimize/hash them
 import bedroomBg from '../../assets/Bedroom.webp';
 
@@ -19,8 +20,11 @@ export default function Home() {
       <section className="About container mx-auto py-2">
         <About></About>
       </section>
-      <section className="About container mx-auto py-2">
+      <section className="WhyChoose container mx-auto py-2">
         <WhyChoose></WhyChoose>
+      </section>
+      <section className="Advantages container mx-auto py-2">
+        <Advantages></Advantages>
       </section>
     </div>
   );

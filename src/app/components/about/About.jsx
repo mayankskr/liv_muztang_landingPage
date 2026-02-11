@@ -1,12 +1,12 @@
 import React from 'react';
 import { FaMars } from 'react-icons/fa'; // Standard Male Symbol
-
+import CallButton from '../CallButton';
 const About = () => {
   return (
     <div className="">
-      <div className="relative m-1 flex flex-col items-center gap-6 rounded-3xl border-2 border-white p-2 text-center text-white shadow-2xl backdrop-blur-md md:p-10">
+      <div className="relative m-1 flex flex-col items-center gap-6 rounded-4xl bg-black/60 p-2 text-center text-white backdrop-blur-md md:p-10">
         {/* Heading */}
-        <h2 className="text-3xl font-extrabold text-amber-500 drop-shadow-sm md:text-4xl">
+        <h2 className="text-3xl font-extrabold text-orange-500 drop-shadow-sm md:text-4xl">
           What is Liv Muztang?
         </h2>
 
@@ -34,12 +34,9 @@ const About = () => {
         </div>
 
         {/* Call to Action Button */}
-        <a
-          href="tel:+910000000000"
-          className="animate-pulse rounded-full bg-orange-100 px-10 py-3 text-lg font-semibold text-black"
-        >
-          CALL NOW
-        </a>
+        <div className="mx-auto w-fit animate-pulse rounded-3xl bg-orange-100 p-2">
+          <CallButton></CallButton>
+        </div>
       </div>
     </div>
   );

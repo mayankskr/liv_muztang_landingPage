@@ -1,6 +1,6 @@
 import './header.css';
 import { PhoneIcon } from '@heroicons/react/20/solid';
-
+import CallButton from '../CallButton';
 export default function Header() {
   return (
     // REMOVED "fixed" class.
@@ -9,11 +9,8 @@ export default function Header() {
       <div>
         <p className="font-bold text-white md:text-xl">Free Consultation</p>
       </div>
-      <div className="flex animate-pulse items-center justify-center rounded-3xl bg-orange-100 p-1">
-        <a href="tel:+910000000000" className="flex gap-1 font-semibold">
-          <PhoneIcon className="h-6 w-6 text-orange-400" />
-          Call Now
-        </a>
+      <div className="animate-pulse">
+        <CallButton></CallButton>
       </div>
     </header>
   );
