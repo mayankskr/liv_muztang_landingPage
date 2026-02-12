@@ -4,6 +4,7 @@ import Video from '../components/video/Video';
 import About from '../components/about/About';
 import WhyChoose from '../components/whyChoose/WhyChoose';
 import Advantages from '../components/advantages/Advantages';
+import Testimonials from '../components/testimonials/Testimonials';
 
 export default function Home() {
   return (
@@ -23,6 +24,9 @@ export default function Home() {
       </section>
       <section className="Advantages container mx-auto py-2">
         <Advantages></Advantages>
+      </section>
+      <section className="Testimonials container mx-auto py-2">
+        <Testimonials></Testimonials>
       </section>
     </div>
   );

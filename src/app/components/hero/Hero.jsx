@@ -34,7 +34,7 @@ export default function Hero() {
             className="relative z-20 mx-auto max-h-60 object-contain md:max-h-120"
           />
         </div>
-        <div className="mx-1 my-auto flex h-fit flex-col gap-3 rounded-4xl bg-black/60 py-4 text-center text-white backdrop-blur-md">
+        <div className="mx-1 my-auto flex h-fit flex-col gap-3 rounded-4xl bg-black/20 py-4 text-center text-white backdrop-blur-md">
           <h1 className="text-xl font-bold md:text-2xl lg:text-4xl">पॉवर, जोश और टाइमिंग बढ़ाएं</h1>
           <h2 className="text-md font-bold md:text-xl lg:text-2xl">
             ज़्यादा स्टैमिना, ज़्यादा एनर्जी, ज़्यादा कॉन्फिडेन्स

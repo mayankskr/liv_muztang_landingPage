@@ -4,7 +4,7 @@ import CallButton from '../CallButton';
 const About = () => {
   return (
     <div className="">
-      <div className="relative m-1 flex flex-col items-center gap-6 rounded-4xl bg-black/60 p-2 text-center text-white backdrop-blur-md md:p-10">
+      <div className="relative m-1 flex flex-col items-center gap-6 rounded-4xl bg-black/20 p-2 text-center text-white backdrop-blur-md md:p-10">
         {/* Heading */}
         <h2 className="text-3xl font-extrabold text-orange-500 drop-shadow-sm md:text-4xl">
           What is Liv Muztang?

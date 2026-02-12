@@ -48,7 +48,7 @@ const WhyChoose = () => {
     <section className="">
       <div className="mx-auto">
         {/* Main card container with dark, semi-transparent background */}
-        <div className="rounded-4xl bg-black/60 p-8 text-center backdrop-blur-md md:p-16">
+        <div className="m-1 rounded-4xl bg-black/20 p-8 text-center backdrop-blur-md md:p-16">
           {/* Headings */}
           <h2 className="mb-6 text-3xl leading-tight font-extrabold text-orange-500 md:text-5xl">
             Why Choose LIV MUZTANG Over Other Men’s Health Supplements?
