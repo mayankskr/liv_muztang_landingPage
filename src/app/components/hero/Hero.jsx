@@ -7,6 +7,9 @@ import logoImg from '../../../assets/LIV_MUZTANG.png';
 import ProductDescription from './ProductDescription';
 import CallButton from '../CallButton.jsx';
 
+const CLOUDINARY_BASE = 'https://res.cloudinary.com/dym1rigju/image/upload';
+const IMG_ID = 'v1770870277/2Bottle_mectjk';
+
 export default function Hero() {
   return (
     <>
@@ -14,7 +17,16 @@ export default function Hero() {
       <div className="back grid md:grid-cols-2">
         <div>
           <img
-            src={bottleImg}
+            // Fallback src (small size)
+            src={`${CLOUDINARY_BASE}/f_auto,q_auto,w_400/${IMG_ID}`}
+            // Responsive source set
+            srcSet={`
+              ${CLOUDINARY_BASE}/f_auto,q_auto,w_300/${IMG_ID} 300w,
+              ${CLOUDINARY_BASE}/f_auto,q_auto,w_600/${IMG_ID} 600w,
+              ${CLOUDINARY_BASE}/f_auto,q_auto,w_900/${IMG_ID} 900w
+            `}
+            // Browser hint for image size
+            sizes="(max-width: 768px) 100vw, 50vw"
             fetchPriority="high"
             alt="Liv Muztang Bottle Product"
             width="400"
