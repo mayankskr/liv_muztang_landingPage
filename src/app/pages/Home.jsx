@@ -3,9 +3,7 @@ import Hero from '../components/hero/Hero';
 import Video from '../components/video/Video';
 import About from '../components/about/About';
 import WhyChoose from '../components/whyChoose/WhyChoose';
-import Advantages from '../components/advantages/advantages';
-// Importing images allows Vite to optimize/hash them
-import bedroomBg from '../../assets/Bedroom.webp';
+import Advantages from '../components/advantages/Advantages';
 
 export default function Home() {
   return (
