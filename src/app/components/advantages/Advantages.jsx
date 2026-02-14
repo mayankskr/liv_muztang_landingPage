@@ -51,7 +51,7 @@ const Advantages = () => {
   return (
     <div className="m-1">
       {/* Main card container with dark, semi-transparent background */}
-      <div className="rounded-4xl border border-white/10 bg-black/20 p-8 text-center shadow-2xl backdrop-blur-md md:p-16">
+      <div className="rounded-4xl border border-white/10 bg-black/60 p-8 text-center shadow-2xl backdrop-blur-md md:p-16">
         {/* Headings */}
         <h2 className="mb-4 text-3xl leading-tight font-extrabold text-orange-500 md:text-5xl">
           Advantages
@@ -84,7 +84,7 @@ const Advantages = () => {
         height="700"
         className="mx-auto my-2 h-auto max-w-full rounded-3xl opacity-90"
       />
-      <div className="rounded-4xl bg-black/20 backdrop-blur-md">
+      <div className="rounded-4xl bg-black/60 backdrop-blur-md">
         <img
           src="https://res.cloudinary.com/dym1rigju/image/upload/f_auto,q_auto,w_600/v1770870279/How_To_Use_qdwxto"
           srcSet="

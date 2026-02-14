@@ -67,7 +67,7 @@ const ReviewCard = ({ name, rating = 0, text, img = null }) => {
   const totalStars = 5;
 
   return (
-    <div className="relative flex flex-col gap-3 rounded-2xl border border-white/6 bg-black/6 p-5 shadow-lg backdrop-blur-md transition-all duration-300 md:w-[48%]">
+    <div className="relative flex flex-col gap-3 rounded-2xl border border-white/6 bg-black/60 p-5 shadow-lg backdrop-blur-md transition-all duration-300 md:w-[48%]">
       <div className="flex items-start gap-3">
         {/* Avatar: always initial (no image) */}
         <div className="flex h-12 w-12 items-center justify-center rounded-full bg-orange-500 text-lg font-bold text-white">
