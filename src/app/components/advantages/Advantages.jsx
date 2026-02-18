@@ -1,21 +1,25 @@
 import React from 'react';
 import { FaCheck } from 'react-icons/fa';
 import CallButton from '../CallButton';
-// Reusable component for each advantage item
+
+// Reusable component for each advantage item - Upgraded to mobile-friendly glass cards
 const AdvantageItem = ({ title, description }) => {
   return (
-    <div className="flex items-start gap-4">
-      {/* Orange Checkmark Icon */}
-      <div className="mt-1 shrink-0 text-2xl text-orange-500">
+    <div className="group flex flex-col items-start gap-4 rounded-2xl border border-white/5 bg-white/5 p-5 transition-all duration-300 hover:-translate-y-1 hover:bg-white/10 hover:shadow-[0_0_15px_rgba(249,115,22,0.1)] md:flex-row md:items-center md:gap-6 md:p-6">
+      {/* Glowing Checkmark Icon */}
+      <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-linear-to-br from-orange-500/20 to-amber-500/5 text-xl text-orange-400 shadow-[0_0_15px_rgba(249,115,22,0.1)] transition-transform duration-300 group-hover:scale-110 md:h-14 md:w-14 md:text-2xl">
         <FaCheck />
       </div>
       <div>
-        <h3 className="mb-1 text-lg leading-snug font-bold text-white md:text-xl">{title}</h3>
-        <p className="text-sm leading-relaxed text-gray-200 md:text-base">{description}</p>
+        <h3 className="mb-1 text-lg font-bold text-white md:text-xl">{title}</h3>
+        <p className="text-sm font-medium leading-relaxed text-gray-300 md:text-base md:leading-relaxed">
+          {description}
+        </p>
       </div>
     </div>
   );
 };
+
 const advantages = [
   {
     title: 'टेस्टोस्टेरोन को नैचुरली बढ़ाता है:',
@@ -47,59 +51,65 @@ const advantages = [
     description: 'इम्यून सिस्टम को मज़बूत बनाता है और सेहत को बेहतर करता है।',
   },
 ];
+
 const Advantages = () => {
   return (
-    <div className="m-1">
-      {/* Main card container with dark, semi-transparent background */}
-      <div className="rounded-4xl border border-white/10 bg-black/20 p-8 text-center shadow-2xl backdrop-blur-md md:p-16">
+    <div className="container mx-auto flex flex-col gap-8 px-4 py-8 md:gap-12 md:py-12">
+      
+      {/* Main card container with premium glassmorphism */}
+      <div className="mx-auto w-full max-w-5xl rounded-3xl border border-white/10 bg-white/5 p-6 text-center shadow-2xl backdrop-blur-xl md:p-12 lg:p-16">
+        
         {/* Headings */}
-        <h2 className="mb-4 text-3xl leading-tight font-extrabold text-orange-500 md:text-5xl">
+        <h2 className="mb-4 bg-linear-to-r from-orange-400 to-amber-500 bg-clip-text text-3xl font-extrabold leading-tight tracking-wide text-transparent md:mb-6 md:text-5xl">
           Advantages
         </h2>
-        <p className="mx-auto mb-10 max-w-3xl text-lg text-white md:text-xl">
+        <p className="mx-auto mb-8 max-w-3xl text-base font-medium leading-relaxed text-gray-300 md:mb-12 md:text-xl md:leading-loose">
           Our Men’s health supplements offer a range of benefits designed to improve your overall
           Men’s wellness:
         </p>
 
         {/* List of Advantages */}
-        <div className="mx-auto mb-12 flex max-w-4xl flex-col gap-6 text-left">
+        <div className="mx-auto mb-10 flex max-w-4xl flex-col gap-4 text-left md:mb-12 md:gap-6">
           {advantages.map((item, index) => (
             <AdvantageItem key={index} {...item} />
           ))}
         </div>
 
-        {/* Call to Action Button */}
+        {/* Call to Action Button - Untouched per your request */}
         <div className="mx-auto w-fit animate-pulse rounded-3xl bg-orange-100 p-2">
           <CallButton></CallButton>
         </div>
       </div>
-      <img
-        // 1. Fallback for old browsers (Added .webp back)
-        src="https://res.cloudinary.com/dym1rigju/image/upload/f_auto,q_auto,w_700/v1770870285/Benefits_webp_odnqw9.webp"
-        // 2. Responsive versions (Added .webp back to all)
 
-        alt="Liv Muztang Benefits"
-        loading="lazy"
-        width="700"
-        height="700"
-        className="mx-auto my-2 h-auto max-w-full rounded-3xl opacity-90"
-      />
-      <div className="rounded-4xl bg-black/20 backdrop-blur-md">
+      {/* Image 1: Benefits (Added subtle shadow and hover effect) */}
+      <div className="mx-auto w-full max-w-4xl px-2">
+        <img
+          src="https://res.cloudinary.com/dym1rigju/image/upload/f_auto,q_auto,w_700/v1770870285/Benefits_webp_odnqw9.webp"
+          alt="Liv Muztang Benefits"
+          loading="lazy"
+          width="700"
+          height="700"
+          className="mx-auto h-auto max-w-full rounded-3xl object-contain drop-shadow-2xl transition-transform duration-500 hover:scale-[1.02]"
+        />
+      </div>
+
+      {/* Image 2: How To Use (Upgraded to a premium glass container) */}
+      <div className="mx-auto w-full max-w-4xl overflow-hidden rounded-3xl border border-white/10 bg-white/5 shadow-2xl backdrop-blur-xl transition-all duration-500 hover:border-white/20 hover:bg-white/10">
         <img
           src="https://res.cloudinary.com/dym1rigju/image/upload/f_auto,q_auto,w_600/v1770870279/How_To_Use_qdwxto"
           srcSet="
           https://res.cloudinary.com/dym1rigju/image/upload/f_auto,q_auto,w_400/v1770870279/How_To_Use_qdwxto 400w,
           https://res.cloudinary.com/dym1rigju/image/upload/f_auto,q_auto,w_800/v1770870279/How_To_Use_qdwxto 800w,
-          https://res.cloudinary.com/dym1rigju/image/upload/f_auto,q_auto,w_1200/v1770870279/How_To_Use_qdwxto 1200w
-        "
+          "
           sizes="(max-width: 768px) 100vw, 800px"
           alt="How to use Liv Muztang"
           loading="lazy"
           width="800"
           height="600"
-          className="mx-auto rounded-xl object-contain"
+          className="mx-auto h-auto w-full object-contain p-2 md:p-6"
         />
       </div>
+      
     </div>
   );
 };

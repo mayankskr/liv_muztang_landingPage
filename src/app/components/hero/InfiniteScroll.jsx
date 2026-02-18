@@ -5,7 +5,6 @@ import { LuWheatOff } from 'react-icons/lu';
 import { TbCandyOff, TbCertificate, TbAward } from 'react-icons/tb';
 
 const InfiniteScroll = () => {
-  // useMemo prevents these arrays from being recreated on every render
   const benefits = useMemo(
     () => [
       'INCREASES STAMINA',
@@ -24,42 +23,18 @@ const InfiniteScroll = () => {
 
   const ingredients = useMemo(
     () => [
-      {
-        title: '100% Ayurvedic',
-        description: 'Natural healing principles',
-        icon: <GoShieldCheck className="text-4xl" />,
-      },
-      {
-        title: 'Clinically Proven',
-        description: 'Scientific validation',
-        icon: <BiSolidBadgeCheck className="text-4xl" />,
-      },
-      {
-        title: 'Gluten Free',
-        description: 'Safe for all diets',
-        icon: <LuWheatOff className="text-4xl" />,
-      },
-      {
-        title: 'No Added Sugar',
-        description: 'Pure & natural',
-        icon: <TbCandyOff className="text-4xl" />,
-      },
-      {
-        title: 'GMP Certified',
-        description: 'Quality standard',
-        icon: <TbCertificate className="text-4xl" />,
-      },
-      {
-        title: 'ISO Certified',
-        description: 'International standards',
-        icon: <TbAward className="text-4xl" />,
-      },
+      { title: '100% Ayurvedic', description: 'Natural healing', icon: <GoShieldCheck className="text-2xl md:text-3xl" /> },
+      { title: 'Clinically Proven', description: 'Scientific validation', icon: <BiSolidBadgeCheck className="text-2xl md:text-3xl" /> },
+      { title: 'Gluten Free', description: 'Safe for all diets', icon: <LuWheatOff className="text-2xl md:text-3xl" /> },
+      { title: 'No Added Sugar', description: 'Pure & natural', icon: <TbCandyOff className="text-2xl md:text-3xl" /> },
+      { title: 'GMP Certified', description: 'Quality standard', icon: <TbCertificate className="text-2xl md:text-3xl" /> },
+      { title: 'ISO Certified', description: 'International standards', icon: <TbAward className="text-2xl md:text-3xl" /> },
     ],
     []
   );
 
   return (
-    <div className="flex w-full flex-col gap-2 overflow-hidden py-4">
+    <div className="flex w-full flex-col gap-4 overflow-hidden py-6 md:gap-6 md:py-8">
       <style>{`
         @keyframes scrollLeft {
           0% { transform: translate3d(0, 0, 0); }
@@ -69,7 +44,6 @@ const InfiniteScroll = () => {
           0% { transform: translate3d(-50%, 0, 0); }
           100% { transform: translate3d(0, 0, 0); }
         }
-        /* Performance class to promote to GPU layer */
         .gpu-accelerate {
           will-change: transform;
           transform: translateZ(0);
@@ -80,18 +54,16 @@ const InfiniteScroll = () => {
       {/* Row 1: Benefits (Text) */}
       <div
         className="relative flex w-full overflow-hidden"
-        style={{
-          maskImage: 'linear-gradient(to right, transparent, black 25%, black 75%, transparent)',
-        }}
+        style={{ maskImage: 'linear-gradient(to right, transparent, black 10%, black 90%, transparent)' }}
       >
         <div
-          className="gpu-accelerate flex gap-10 whitespace-nowrap md:gap-20"
-          style={{ animation: 'scrollLeft 120s linear infinite' }}
+          className="gpu-accelerate flex gap-8 whitespace-nowrap md:gap-24"
+          style={{ animation: 'scrollLeft 90s linear infinite' }}
         >
           {[...benefits, ...benefits, ...benefits].map((text, i) => (
             <span
               key={`ben-${i}`}
-              className="cursor-default text-2xl font-black text-amber-100 shadow-xl transition-all duration-300 select-none hover:scale-105 hover:text-orange-500 md:text-4xl"
+              className="cursor-default select-none text-xl font-black tracking-wider text-white/70 transition-all duration-300 hover:text-orange-500 md:text-4xl"
             >
               {text}
             </span>
@@ -102,28 +74,25 @@ const InfiniteScroll = () => {
       {/* Row 2: Ingredients & Certifications (Cards) */}
       <div
         className="relative flex w-full overflow-hidden"
-        style={{
-          maskImage: 'linear-gradient(to right, transparent, black 35%, black 65%, transparent)',
-        }}
+        style={{ maskImage: 'linear-gradient(to right, transparent, black 10%, black 90%, transparent)' }}
       >
         <div
-          className="gpu-accelerate flex gap-6 whitespace-nowrap md:gap-10"
-          style={{ animation: 'scrollRight 60s linear infinite' }}
+          className="gpu-accelerate flex gap-4 whitespace-nowrap md:gap-8"
+          style={{ animation: 'scrollRight 70s linear infinite' }}
         >
           {[...ingredients, ...ingredients, ...ingredients].map((item, i) => (
             <div
               key={`ing-${i}`}
-              className="group flex cursor-default items-center gap-4 rounded-2xl p-4 text-amber-100 transition-all duration-300 hover:scale-105 hover:shadow-md"
+              className="group flex cursor-default items-center gap-3 rounded-2xl border border-white/10 bg-white/5 px-4 py-2.5 transition-all duration-300 hover:bg-white/10 md:gap-4 md:px-6 md:py-3"
             >
-              <div className="transition-colors duration-300 group-hover:text-orange-500">
+              <div className="text-orange-400 transition-transform duration-300 group-hover:scale-110 group-hover:text-orange-300">
                 {item.icon}
               </div>
-
               <div className="flex flex-col">
-                <span className="text-lg font-bold transition-colors duration-300 group-hover:text-orange-500">
+                <span className="text-sm font-bold text-gray-100 transition-colors duration-300 group-hover:text-white md:text-base">
                   {item.title}
                 </span>
-                <span className="text-sm font-medium transition-colors duration-300 group-hover:text-orange-400">
+                <span className="text-[10px] font-medium text-gray-400 transition-colors duration-300 group-hover:text-orange-200 md:text-xs">
                   {item.description}
                 </span>
               </div>

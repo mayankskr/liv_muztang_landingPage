@@ -1,16 +1,19 @@
 import React from 'react';
 import { FaRunning, FaMortarPestle, FaHeartbeat } from 'react-icons/fa';
 import { MdOutlineBalance } from 'react-icons/md';
-import { PhoneIcon } from 'lucide-react';
 import CallButton from '../CallButton';
-// Reusable component for each feature item
+
+// Reusable component for each feature item - Upgraded to a premium glass card
 const FeatureItem = ({ icon, title, description }) => {
   return (
-    <div className="flex flex-col items-start gap-4 md:flex-row">
-      <div className="shrink-0 text-4xl text-orange-500">{icon}</div>
+    <div className="group flex flex-col items-start gap-4 rounded-2xl border border-white/5 bg-white/5 p-5 transition-all duration-300 hover:-translate-y-1 hover:bg-white/10 hover:shadow-lg md:flex-row md:items-center md:gap-6 md:p-8">
+      {/* Glowing icon container */}
+      <div className="flex shrink-0 items-center justify-center rounded-2xl bg-linear-to-br from-orange-500/20 to-amber-500/5 p-4 text-4xl text-orange-400 shadow-[0_0_15px_rgba(249,115,22,0.1)] transition-transform duration-300 group-hover:scale-110 md:p-5 md:text-5xl">
+        {icon}
+      </div>
       <div>
-        <h3 className="mb-2 text-xl font-bold text-white">{title}</h3>
-        <p className="leading-relaxed text-gray-200">{description}</p>
+        <h3 className="mb-2 text-lg font-bold text-white md:text-xl">{title}</h3>
+        <p className="text-sm font-medium leading-relaxed text-gray-300 md:text-base md:leading-relaxed">{description}</p>
       </div>
     </div>
   );
@@ -45,31 +48,30 @@ const WhyChoose = () => {
   ];
 
   return (
-    <section className="">
-      <div className="mx-auto">
-        {/* Main card container with dark, semi-transparent background */}
-        <div className="m-1 rounded-4xl bg-black/20 p-8 text-center backdrop-blur-md md:p-16">
-          {/* Headings */}
-          <h2 className="mb-6 text-3xl leading-tight font-extrabold text-orange-500 md:text-5xl">
-            Why Choose LIV MUZTANG Over Other Men’s Health Supplements?
-          </h2>
-          <p className="mx-auto mb-12 max-w-4xl text-lg text-white md:text-xl">
-            Choosing the right men’s health supplement can be overwhelming, but here’s why LIV
-            MUZTANG stands out:
-          </p>
+    <section className="container mx-auto px-4 py-8 md:py-12">
+      <div className="mx-auto max-w-6xl rounded-3xl border border-white/10 bg-white/5 p-6 text-center shadow-2xl backdrop-blur-xl md:p-12 lg:p-16">
+        
+        {/* Headings */}
+        <h2 className="mb-4 bg-linear-to-r from-orange-400 to-amber-500 bg-clip-text text-2xl font-extrabold leading-tight tracking-wide text-transparent md:mb-6 md:text-4xl lg:text-5xl">
+          Why Choose LIV MUZTANG Over Other Men’s Health Supplements?
+        </h2>
+        <p className="mx-auto mb-8 max-w-3xl text-base font-medium leading-relaxed text-gray-300 md:mb-12 md:text-xl md:leading-loose">
+          Choosing the right men’s health supplement can be overwhelming, but here’s why LIV
+          MUZTANG stands out:
+        </p>
 
-          {/* Grid for features */}
-          <div className="mb-12 grid grid-cols-1 gap-x-12 gap-y-12 text-left md:grid-cols-2">
-            {features.map((feature, index) => (
-              <FeatureItem key={index} {...feature} />
-            ))}
-          </div>
-
-          {/* Call to Action Button */}
-          <div className="mx-auto w-fit animate-pulse rounded-3xl bg-orange-100 p-2">
-            <CallButton></CallButton>
-          </div>
+        {/* Grid for features */}
+        <div className="mb-8 grid grid-cols-1 gap-4 text-left md:mb-12 md:grid-cols-2 md:gap-6 lg:gap-8">
+          {features.map((feature, index) => (
+            <FeatureItem key={index} {...feature} />
+          ))}
         </div>
+
+        {/* Call to Action Button Wrapper - Matched to standard layout */}
+        <div className="mx-auto w-fit animate-pulse rounded-3xl bg-orange-100 p-2">
+                            <CallButton></CallButton>
+                          </div>
+        
       </div>
     </section>
   );
