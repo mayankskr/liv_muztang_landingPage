@@ -3,7 +3,7 @@ import Hero from '../components/hero/Hero';
 import Video from '../components/video/Video';
 import About from '../components/about/About';
 import WhyChoose from '../components/whyChoose/WhyChoose';
-import Advantages from '../components/advantages/advantages';
+import Advantages from '../components/advantages/Advantages';
 import Testimonials from '../components/testimonials/Testimonials';
 
 export default function Home() {
