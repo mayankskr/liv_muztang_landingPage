@@ -2,14 +2,13 @@ import InfiniteScroll from './InfiniteScroll';
 import { PhoneIcon } from '@heroicons/react/20/solid';
 import { FaStar, FaStarHalfAlt } from 'react-icons/fa';
 // Import assets for better caching and performance
-import bottleImg from '../../../assets/2Bottle.webp';
-import logoImg from '../../../assets/LIV_MUZTANG.png';
+
 import ProductDescription from './ProductDescription';
 import CallButton from '../CallButton.jsx';
 
 const CLOUDINARY_BASE = 'https://res.cloudinary.com/dym1rigju/image/upload';
 const IMG_ID = 'v1770870277/2Bottle_mectjk';
-
+const IMG_ID2 = 'v1770870280/LIV_MUZTANG_ooqezq.png'
 export default function Hero() {
   return (
     <div className="overflow-hidden font-sans text-white antialiased">
@@ -54,7 +53,7 @@ export default function Hero() {
 
             <div className="py-1">
               <img
-                src={logoImg}
+                src={`${CLOUDINARY_BASE}/f_auto,q_auto,w_400/${IMG_ID2}`}
                 fetchPriority="high"
                 alt="Liv Muztang Logo"
                 className="max-h-16 object-contain drop-shadow-lg md:max-h-24"
