@@ -138,13 +138,13 @@ const Testimonials = () => {
   const reviews = [
     {
       name: 'Ashwini Gupta',
-      img: 'https://res.cloudinary.com/dym1rigju/image/upload/v1770870282/yshjdqadqv2yhr1yveek-scaled-1_s2u0xo.png',
+      img: 'https://res.cloudinary.com/dym1rigju/image/upload/v1771586685/testimonial2_mra5jm.webp',
       rating: 5,
       text: 'Liv Muztang lene ke baad performance aur stamina dono mein improvement feel hua. Aaj ise use karte huye mujhe 1 mahina ho gaya.',
     },
     {
       name: 'Deepak Sahu',
-      img: 'https://res.cloudinary.com/dym1rigju/image/upload/q_auto,f_auto,w_800,c_limit/v1770870281/nsjahwowtql5hsbgpzqe-scaled-1_xn4vec.png',
+      img: 'https://res.cloudinary.com/dym1rigju/image/upload/v1771586685/testimonial1_sd3a1b.webp',
       rating: 5,
       text: 'This Product increased my testosterone levels dramatically. Highly recommended.',
     },
