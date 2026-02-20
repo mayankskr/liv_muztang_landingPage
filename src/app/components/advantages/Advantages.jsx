@@ -81,16 +81,19 @@ const Advantages = () => {
         </div>
       </div>
 
-      {/* Image 1: Benefits (Added subtle shadow and hover effect) */}
+      <div className='grid gap-4 md:grid-cols-2'>
+        {/* Image 1: Benefits (Added subtle shadow and hover effect) */}
       <div className="mx-auto w-full max-w-4xl px-2">
-        <img
+       <div className='h-full rounded-4xl overflow-hidden'>
+         <img
           src="https://res.cloudinary.com/dym1rigju/image/upload/f_auto,q_auto,w_700/v1770870285/Benefits_webp_odnqw9.webp"
           alt="Liv Muztang Benefits"
           loading="lazy"
           width="700"
           height="700"
-          className="mx-auto h-auto max-w-full rounded-3xl object-contain drop-shadow-2xl transition-transform duration-500 hover:scale-[1.02]"
+          className="mx-auto h-full rounded-3xl object-contain drop-shadow-2xl transition-transform duration-500 hover:scale-[1.02]"
         />
+       </div>
       </div>
 
       {/* Image 2: How To Use (Upgraded to a premium glass container) */}
@@ -108,6 +111,7 @@ const Advantages = () => {
           height="600"
           className="mx-auto h-auto w-full object-contain p-2 md:p-6"
         />
+      </div>
       </div>
       
     </div>

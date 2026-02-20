@@ -91,12 +91,12 @@ const ExpertViews = () => {
               key={video.id}
               className="group relative w-full shrink-0 snap-center overflow-hidden rounded-3xl border border-white/10 bg-white/5 shadow-xl backdrop-blur-xl transition-all duration-300 hover:-translate-y-2 hover:border-white/20 hover:shadow-[0_0_25px_rgba(249,115,22,0.15)] md:w-[calc(33.333%-1rem)] lg:w-[calc(33.333%-1.5rem)]"
             >
-              <div className="relative aspect-4/5 w-full bg-black/40">
+              <div className="relative aspect-3/2 md:aspect-square w-full bg-black/40">
                 <img
                   src={video.thumbnail}
                   alt={video.title}
                   loading="lazy"
-                  className="h-full object-fill opacity-90 transition-transform duration-700 group-hover:scale-105 group-hover:opacity-100"
+                  className="h-full object-cover opacity-90 transition-transform duration-700 group-hover:scale-105 group-hover:opacity-100"
                 />
                 
                 <div
@@ -109,9 +109,7 @@ const ExpertViews = () => {
                 </div>
 
                 <div className="absolute bottom-0 left-0 w-full bg-linear-to-t from-black/90 via-black/40 to-transparent p-5 pt-12">
-                  <h3 className="text-lg font-bold text-white drop-shadow-md md:text-xl">
-                    {video.title}
-                  </h3>
+                  
                 </div>
               </div>
             </div>
