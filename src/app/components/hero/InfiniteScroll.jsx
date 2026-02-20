@@ -7,16 +7,16 @@ import { TbCandyOff, TbCertificate, TbAward } from 'react-icons/tb';
 const InfiniteScroll = () => {
   const benefits = useMemo(
     () => [
-      'INCREASES STAMINA',
-      'BOOSTS TESTOSTERONE',
-      'ELIMINATES WEAKNESS',
-      'IMPROVES PERFORMANCE',
-      'STRONGER ERECTION',
-      'INCREASES SPERM COUNT',
-      'REDUCES STRESS',
-      'NATURAL ENERGY',
-      'ENHANCES LIBIDO',
-      'MUSCLE RECOVERY',
+      'सहनशक्ति बढ़ाता है',
+      'टेस्टोस्टेरोन बढ़ाता है',
+      'कमज़ोरी दूर करता है',
+      'प्रदर्शन में सुधार करता है',
+      'मजबूत स्तंभन में सहायक',
+      'शुक्राणुओं की संख्या बढ़ाने में सहायक',
+      'तनाव कम करता है',
+      'प्राकृतिक ऊर्जा प्रदान करता है',
+      'कामेच्छा बढ़ाने में सहायक',
+      'मांसपेशियों की रिकवरी में सहायक',
     ],
     []
   );
@@ -83,7 +83,7 @@ const InfiniteScroll = () => {
           {[...ingredients, ...ingredients, ...ingredients].map((item, i) => (
             <div
               key={`ing-${i}`}
-              className="group flex cursor-default items-center gap-3 rounded-2xl border border-white/10 bg-white/5 px-4 py-2.5 transition-all duration-300 hover:bg-white/10 md:gap-4 md:px-6 md:py-3"
+              className="group flex cursor-default items-center gap-3 rounded-2xl border border-white/10 bg-black/40 px-4 py-2.5 transition-all duration-300 hover:bg-white/10 md:gap-4 md:px-6 md:py-3"
             >
               <div className="text-orange-400 transition-transform duration-300 group-hover:scale-110 group-hover:text-orange-300">
                 {item.icon}

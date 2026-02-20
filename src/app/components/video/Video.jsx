@@ -89,7 +89,7 @@ const ExpertViews = () => {
           {expertVideos.map((video) => (
             <div
               key={video.id}
-              className="group relative w-full shrink-0 snap-center overflow-hidden rounded-3xl border border-white/10 bg-white/5 shadow-xl backdrop-blur-xl transition-all duration-300 hover:-translate-y-2 hover:border-white/20 hover:shadow-[0_0_25px_rgba(249,115,22,0.15)] md:w-[calc(33.333%-1rem)] lg:w-[calc(33.333%-1.5rem)]"
+              className="group relative w-full shrink-0 snap-center overflow-hidden rounded-3xl border border-white/10 bg-black/40 shadow-xl backdrop-blur-xl transition-all duration-300 hover:-translate-y-2 hover:border-white/20 hover:shadow-[0_0_25px_rgba(249,115,22,0.15)] md:w-[calc(33.333%-1rem)] lg:w-[calc(33.333%-1.5rem)]"
             >
               <div className="relative aspect-3/2 md:aspect-square w-full bg-black/40">
                 <img

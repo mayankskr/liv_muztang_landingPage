@@ -8,7 +8,7 @@ export default function Header() {
         
         <div>
           <p className="bg-linear-to-r from-white to-gray-300 bg-clip-text text-sm font-extrabold tracking-wide text-transparent drop-shadow-md sm:text-base md:text-xl">
-            Free Consultation
+            निःशुल्क परामर्श
           </p>
         </div>
 

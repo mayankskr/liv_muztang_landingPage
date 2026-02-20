@@ -68,7 +68,7 @@ const ReviewCard = ({ name, rating = 0, text, img = null }) => {
   const totalStars = 5;
 
   return (
-    <div className="group flex flex-col gap-4 rounded-3xl border border-white/10 bg-white/5 p-6 shadow-xl backdrop-blur-xl transition-all duration-300 hover:-translate-y-1 hover:bg-white/10 hover:shadow-2xl md:w-[calc(50%-0.75rem)]">
+    <div className="group flex flex-col gap-4 rounded-3xl border border-white/10 bg-black/40 p-6 shadow-xl backdrop-blur-xl transition-all duration-300 hover:-translate-y-1 hover:bg-white/10 hover:shadow-2xl md:w-[calc(50%-0.75rem)]">
       <div className="flex items-start gap-4">
         {/* Avatar */}
         <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-linear-to-br from-orange-500 to-amber-500 text-xl font-bold text-white shadow-md md:h-14 md:w-14 md:text-2xl">
@@ -214,7 +214,7 @@ const Testimonials = () => {
           </div>
 
           {/* Right: Progress Bars Box */}
-          <div className="w-full rounded-3xl border border-white/10 bg-white/5 p-6 shadow-2xl backdrop-blur-xl md:w-1/2 md:p-8 lg:w-5/12">
+          <div className="w-full rounded-3xl border border-white/10 bg-black/40 p-6 shadow-2xl backdrop-blur-xl md:w-1/2 md:p-8 lg:w-5/12">
             <div className="flex flex-col gap-1">
               {ratingStats.breakdown.map((item) => (
                 <ProgressBar

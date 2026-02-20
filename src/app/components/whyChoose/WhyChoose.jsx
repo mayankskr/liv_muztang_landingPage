@@ -6,7 +6,7 @@ import CallButton from '../CallButton';
 // Reusable component for each feature item - Upgraded to a premium glass card
 const FeatureItem = ({ icon, title, description }) => {
   return (
-    <div className="group flex flex-col items-start gap-4 rounded-2xl border border-white/5 bg-white/5 p-5 transition-all duration-300 hover:-translate-y-1 hover:bg-white/10 hover:shadow-lg md:flex-row md:items-center md:gap-6 md:p-8">
+    <div className="group flex flex-col items-start gap-4 rounded-2xl border border-white/5 bg-black/40 p-5 transition-all duration-300 hover:-translate-y-1 hover:bg-white/10 hover:shadow-lg md:flex-row md:items-center md:gap-6 md:p-8">
       {/* Glowing icon container */}
       <div className="flex shrink-0 items-center justify-center rounded-2xl bg-linear-to-br from-orange-500/20 to-amber-500/5 p-4 text-4xl text-orange-400 shadow-[0_0_15px_rgba(249,115,22,0.1)] transition-transform duration-300 group-hover:scale-110 md:p-5 md:text-5xl">
         {icon}
@@ -49,7 +49,7 @@ const WhyChoose = () => {
 
   return (
     <section className="container mx-auto px-4 py-8 md:py-12">
-      <div className="mx-auto max-w-6xl rounded-3xl border border-white/10 bg-white/5 p-6 text-center shadow-2xl backdrop-blur-xl md:p-12 lg:p-16">
+      <div className="mx-auto max-w-6xl rounded-3xl border border-white/10 bg-black/40 p-6 text-center shadow-2xl backdrop-blur-xl md:p-12 lg:p-16">
         
         {/* Headings */}
         <h2 className="mb-4 bg-linear-to-r from-orange-400 to-amber-500 bg-clip-text text-2xl font-extrabold leading-tight tracking-wide text-transparent md:mb-6 md:text-4xl lg:text-5xl">
@@ -68,7 +68,7 @@ const WhyChoose = () => {
         </div>
 
         {/* Call to Action Button Wrapper - Matched to standard layout */}
-        <div className="mx-auto w-fit animate-pulse rounded-3xl bg-orange-100 p-2">
+        <div className="mx-auto w-fit animate-pulse rounded-3xl bg-white p-2">
                             <CallButton></CallButton>
                           </div>
         

@@ -5,7 +5,7 @@ import CallButton from '../CallButton';
 // Reusable component for each advantage item - Upgraded to mobile-friendly glass cards
 const AdvantageItem = ({ title, description }) => {
   return (
-    <div className="group flex flex-col items-start gap-4 rounded-2xl border border-white/5 bg-white/5 p-5 transition-all duration-300 hover:-translate-y-1 hover:bg-white/10 hover:shadow-[0_0_15px_rgba(249,115,22,0.1)] md:flex-row md:items-center md:gap-6 md:p-6">
+    <div className="group flex flex-col items-start gap-4 rounded-2xl border border-white/5 bg-black/40 p-5 transition-all duration-300 hover:-translate-y-1 hover:bg-white/10 hover:shadow-[0_0_15px_rgba(249,115,22,0.1)] md:flex-row md:items-center md:gap-6 md:p-6">
       {/* Glowing Checkmark Icon */}
       <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-linear-to-br from-orange-500/20 to-amber-500/5 text-xl text-orange-400 shadow-[0_0_15px_rgba(249,115,22,0.1)] transition-transform duration-300 group-hover:scale-110 md:h-14 md:w-14 md:text-2xl">
         <FaCheck />
@@ -57,7 +57,7 @@ const Advantages = () => {
     <div className="container mx-auto flex flex-col gap-8 px-4 py-8 md:gap-12 md:py-12">
       
       {/* Main card container with premium glassmorphism */}
-      <div className="mx-auto w-full max-w-5xl rounded-3xl border border-white/10 bg-white/5 p-6 text-center shadow-2xl backdrop-blur-xl md:p-12 lg:p-16">
+      <div className="mx-auto w-full max-w-5xl rounded-3xl border border-white/10 bg-black/40 p-6 text-center shadow-2xl backdrop-blur-xl md:p-12 lg:p-16">
         
         {/* Headings */}
         <h2 className="mb-4 bg-linear-to-r from-orange-400 to-amber-500 bg-clip-text text-3xl font-extrabold leading-tight tracking-wide text-transparent md:mb-6 md:text-5xl">
@@ -76,7 +76,7 @@ const Advantages = () => {
         </div>
 
         {/* Call to Action Button - Untouched per your request */}
-        <div className="mx-auto w-fit animate-pulse rounded-3xl bg-orange-100 p-2">
+        <div className="mx-auto w-fit animate-pulse rounded-3xl bg-white p-2">
           <CallButton></CallButton>
         </div>
       </div>
@@ -97,7 +97,7 @@ const Advantages = () => {
       </div>
 
       {/* Image 2: How To Use (Upgraded to a premium glass container) */}
-      <div className="mx-auto w-full max-w-4xl overflow-hidden rounded-3xl border border-white/10 bg-white/5 shadow-2xl backdrop-blur-xl transition-all duration-500 hover:border-white/20 hover:bg-white/10">
+      <div className="mx-auto w-full max-w-4xl overflow-hidden rounded-3xl border border-white/10 bg-black/40 shadow-2xl backdrop-blur-xl transition-all duration-500 hover:border-white/20 hover:bg-white/10">
         <img
           src="https://res.cloudinary.com/dym1rigju/image/upload/f_auto,q_auto,w_600/v1770870279/How_To_Use_qdwxto"
           srcSet="

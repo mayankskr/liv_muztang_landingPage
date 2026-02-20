@@ -1,7 +1,7 @@
 const ProductDescription = () => {
   return (
     <div className="container mx-auto px-4 pb-8 md:pb-12">
-      <div className="mx-auto max-w-5xl rounded-3xl border border-white/10 bg-white/5 p-5 text-center shadow-2xl backdrop-blur-xl md:p-14">
+      <div className="mx-auto max-w-5xl rounded-3xl border border-white/10 bg-black/40 p-5 text-center shadow-2xl backdrop-blur-xl md:p-14">
         
         <div className="mb-6 space-y-5 md:mb-8 md:space-y-6">
           <p className="text-lg font-medium leading-relaxed text-gray-100 md:text-2xl md:leading-loose">

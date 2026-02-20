@@ -5,7 +5,7 @@ import CallButton from '../CallButton';
 const About = () => {
   return (
     <div className="container mx-auto px-4 py-8 md:py-12">
-      <div className="mx-auto flex max-w-4xl flex-col items-center gap-6 rounded-3xl border border-white/10 bg-white/5 p-6 text-center shadow-2xl backdrop-blur-xl md:gap-10 md:p-12">
+      <div className="mx-auto flex max-w-4xl flex-col items-center gap-6 rounded-3xl border border-white/10 bg-black/40 p-6 text-center shadow-2xl backdrop-blur-xl md:gap-10 md:p-12">
         
         {/* Heading */}
         <h2 className="bg-linear-to-r from-orange-400 to-amber-500 bg-clip-text text-3xl font-extrabold tracking-wide text-transparent drop-shadow-sm md:text-4xl">
@@ -30,7 +30,7 @@ const About = () => {
         
 
         {/* Call to Action Button Wrapper - Matched to Hero.jsx */}
-        <div className="mx-auto animate-pulse rounded-3xl bg-orange-100 p-2">
+        <div className="mx-auto animate-pulse rounded-3xl bg-white p-2">
                     <CallButton></CallButton>
                   </div>
         

@@ -40,7 +40,7 @@ export default function Hero() {
           </div>
 
           {/* Text & Content Section */}
-          <div className="flex flex-col items-center justify-center gap-5 rounded-3xl border border-white/10 bg-white/5 p-6 text-center shadow-2xl backdrop-blur-xl md:gap-6 md:p-12">
+          <div className="flex flex-col items-center justify-center gap-5 rounded-3xl border border-white/10 bg-black/40 p-6 text-center shadow-2xl backdrop-blur-xl md:gap-6 md:p-12">
             
             <div className="space-y-1 md:space-y-2">
               <h1 className="bg-linear-to-r from-white to-gray-300 bg-clip-text text-2xl font-extrabold leading-tight tracking-wide text-transparent md:text-3xl lg:text-4xl">
@@ -80,7 +80,7 @@ export default function Hero() {
             </div>
 
             {/* Call Button Container - Untouched from your file */}
-            <div className="mx-auto animate-pulse rounded-3xl bg-orange-100 p-2">
+            <div className="mx-auto animate-pulse rounded-3xl bg-white p-2">
             <CallButton></CallButton>
           </div>
 
