@@ -5,19 +5,19 @@ const expertVideos = [
   {
     id: 1,
     title: "How we take care of each other's happiness",
-    thumbnail: 'https://res.cloudinary.com/dym1rigju/image/upload/f_auto,q_auto/v1771577343/LM1t_x09s19.jpg', 
+    thumbnail: 'https://res.cloudinary.com/dym1rigju/image/upload/f_auto,q_auto/v1771584394/01_wdhidw.jpg', 
     videoUrl: 'https://res.cloudinary.com/dym1rigju/video/upload/f_auto,q_auto/v1771564024/LM1_bndzpl.mp4', 
   },
   {
     id: 2,
     title: 'Restore your energy the Ayurvedic and natural way.',
-    thumbnail: 'https://res.cloudinary.com/dym1rigju/image/upload/f_auto,q_auto/v1771577342/LM2T_gtklk7.jpg', 
+    thumbnail: 'https://res.cloudinary.com/dym1rigju/image/upload/f_auto,q_auto/v1771584395/02_tyg1ve.jpg', 
     videoUrl: 'https://res.cloudinary.com/dym1rigju/video/upload/f_auto,q_auto/v1771563981/LM2_aag4tq.mp4',
   },
   {
     id: 3,
     title: 'One Ayurvedic product l answer all your concerns.',
-    thumbnail: 'https://res.cloudinary.com/dym1rigju/image/upload/f_auto,q_auto/v1771577343/LM3t_rgcopx.jpg',
+    thumbnail: 'https://res.cloudinary.com/dym1rigju/image/upload/f_auto,q_auto/v1771584395/03_bl7ub5.jpg',
     videoUrl: 'https://res.cloudinary.com/dym1rigju/video/upload/f_auto,q_auto/v1771563971/LM3_wgcd9n.mp4', 
   },
 ];
@@ -96,14 +96,14 @@ const ExpertViews = () => {
                   src={video.thumbnail}
                   alt={video.title}
                   loading="lazy"
-                  className="h-full object-cover opacity-90 transition-transform duration-700 group-hover:scale-105 group-hover:opacity-100"
+                  className="w-full object-cover opacity-90 transition-transform duration-700 group-hover:scale-105 group-hover:opacity-100"
                 />
                 
                 <div
                   className="absolute inset-0 flex cursor-pointer items-center justify-center bg-black/20 transition-colors duration-300 group-hover:bg-black/10"
                   onClick={() => handleOpenVideo(video)}
                 >
-                  <div className="flex h-16 w-16 items-center justify-center rounded-full border border-white/50 bg-white/10 shadow-[0_0_20px_rgba(0,0,0,0.5)] backdrop-blur-md transition-transform duration-300 group-hover:scale-110 md:h-20 md:w-20">
+                  <div className="flex h-16 w-16 items-center justify-center rounded-full border border-white/50 bg-white/10 shadow-[0_0_20px_rgba(0,0,0,0.5)]  transition-transform duration-300 group-hover:scale-110 md:h-20 md:w-20">
                     <FaPlay className="ml-1 text-2xl text-white drop-shadow-lg md:text-3xl" />
                   </div>
                 </div>
